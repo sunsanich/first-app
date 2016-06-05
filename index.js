@@ -45,9 +45,9 @@ var numUsers = 0;	//количество участников
 webSocketServer.on('connection', function (ws) {
 	
  
-// var id = setInterval(function() {
+ var id = setInterval(function() {
     ws.send(JSON.stringify(new Date()), function() {  })
- //}, 10000)
+ }, 10000)
 	
 	
 	
